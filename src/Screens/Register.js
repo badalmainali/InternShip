@@ -1,74 +1,56 @@
 import React from "react";
+import Form from 'react-bootstrap/Form';
+import Button from 'react-bootstrap/Button';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+
 
 function Registerpage() {
     return (
-        <div className="maincontainer">
+        <Container>
+            <Row>
+                <Col></Col>
+                <Col>
+                    <Form className="m-3 reg">
+                        <h2 className="mt-4">REGISTER PAGE</h2>
+                        <Form.Group className="mb-3 mt-4" controlId="formBasicFullname">
+                            <Form.Label>Full Name</Form.Label>
+                            <Form.Control type="fullname" placeholder="Enter Name" />
+                            
+                        </Form.Group>
 
-            <div class="container">
-
-                <div class="card bg-light">
-                    <article class="card-body mx-auto" style={{ maxWidth: "400px" }}>
-                        <h4 class="card-title mt-3 text-center">Create Account</h4>
-                        
-                        <form>
-                            <div class="form-group input-group">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text"> <i class="fa fa-user"></i> </span>
-                                </div>
-                                <input name="" class="form-control" placeholder="Full name" type="text" />
-                            </div>
-                            <div class="form-group input-group">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
-                                </div>
-                                <input name="" class="form-control" placeholder="Email address" type="email" />
-                            </div>
-                            <div class="form-group input-group">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text"> <i class="fa fa-phone"></i> </span>
-                                </div>
-                                <select class="custom-select" style={{ maxWidth: "120px" }}>
-                                    <option selected="">+91</option>
-                                    <option value="1">+001</option>
-                                    <option value="2">+020</option>
-                                    <option value="3">+011</option>
-                                </select>
-                                <input name="" class="form-control" placeholder="Phone number" type="text" />
-                            </div>
-                            <div class="form-group input-group">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text"> <i class="fa fa-building"></i> </span>
-                                </div>
-                                <select class="form-control">
-                                    <option selected=""> Select job type</option>
-                                    <option>Web Developer</option>
-                                    <option>Full Stack Developer</option>
-                                    <option>Mean Stack</option>
-                                </select>
-                            </div>
-                            <div class="form-group input-group">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
-                                </div>
-                                <input class="form-control" placeholder="Create password" type="password" />
-                            </div>
-                            <div class="form-group input-group">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
-                                </div>
-                                <input class="form-control" placeholder="Repeat password" type="password" />
-                            </div>
-                            <div class="form-group">
-                                <button type="button" class="btn btn-primary btn-block"> Create Account  </button>
-                            </div>
-                            <p class="text-center">Have an account? <a href="#">Log In</a> </p>
-                        </form>
-                    </article>
-                </div>
-
-            </div>
-
-        </div>
+                        <Form.Group className="mb-3" controlId="formBasicPassword">
+                            <Form.Label>Phone</Form.Label>
+                            <Form.Control type="phone" placeholder="+977 9815957785" />
+                        </Form.Group>
+                        <Form.Group className="mb-3" controlId="formBasicPassword">
+                            <Form.Label>Email</Form.Label>
+                            <Form.Control type="phone" placeholder="badalma12@gmail.com" />
+                        </Form.Group>
+                        <Form.Group className="mb-3" controlId="formBasicPassword">
+                            <Form.Label>Password</Form.Label>
+                            <Form.Control type="phone" placeholder="Your Password" />
+                        </Form.Group>
+                        <Form.Group className="mb-3" controlId="formBasicPassword">
+                            <Form.Label>Confirm Password</Form.Label>
+                            <Form.Control type="phone" placeholder="Enter Again" />
+                        </Form.Group>
+                        <Form.Group className="mb-3" controlId="formBasicPassword">
+                            <Form.Label>Referral Code</Form.Label>
+                            <Form.Control type="phone" placeholder="" />
+                        </Form.Group>
+                        <Form.Group className="mb-3" controlId="formBasicCheckbox">
+                            <Form.Check type="checkbox" label="I agree to all the Terms and Conditions" />
+                        </Form.Group>
+                        <Button variant="primary" type="submit">
+                            Register
+                        </Button>
+                    </Form>
+                </Col>
+                <Col></Col>
+            </Row>
+        </Container>
     )
 }
 

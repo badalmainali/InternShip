@@ -1,5 +1,6 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
+
 }
 
 .App-logo {
@@ -41,4 +42,12 @@
 .navs
 {
   background-color: rgb(210, 242, 205) !important;
+}
+
+/* register */
+.reg
+{
+  border: 1px solid !important;
+  align-items: flex-start !important;
+  padding: 3% !important;
 }
