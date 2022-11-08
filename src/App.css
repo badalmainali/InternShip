@@ -36,3 +36,9 @@
     transform: rotate(360deg);
   }
 }
+
+/* navbar design */
+.navs
+{
+  background-color: rgb(210, 242, 205) !important;
+}
