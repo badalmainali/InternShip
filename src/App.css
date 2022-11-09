@@ -1,7 +1,3 @@
-.App {
-  /* text-align: center; */
-
-}
 
 .App-logo {
   height: 40vmin;
@@ -52,7 +48,8 @@
   
   align-items: flex-start !important;
   padding: 3% !important;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px !important;   
+  box-shadow: rgba(244, 242, 242, 0.1) 0px 10px 50px !important;   
+  background-color: rgb(242, 249, 249) !important;
 }
 
 .text-input:focus{
@@ -70,3 +67,7 @@
 }
 
 /* btn */
+.inpt-field
+{
+  box-shadow: none !important;
+}

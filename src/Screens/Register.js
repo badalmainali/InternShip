@@ -17,7 +17,7 @@ function Registerpage() {
                         <h2 className="mt-1 reg-head">REGISTER</h2>
                         <Form.Group className="mb-3 " controlId="formBasicFullname">
                             <Form.Label className="form-labels">Full Name</Form.Label>
-                            <Form.Control required type="fullname" placeholder="Enter Name" />
+                            <Form.Control required className="inpt-field" type="fullname" placeholder="Enter Name" />
 
                         </Form.Group>
 
@@ -26,6 +26,7 @@ function Registerpage() {
                             <InputGroup>
                                 <InputGroup.Text>+977</InputGroup.Text>
                                 <Form.Control
+                                    className="inpt-field" 
                                     required
                                     id="inlineFormInputGroupPhone"
 
@@ -35,22 +36,22 @@ function Registerpage() {
 
                         <Form.Group className="mb-3" controlId="formBasicPassword">
                             <Form.Label className="form-labels">Email</Form.Label>
-                            <Form.Control required type="phone" placeholder="badalma12@gmail.com" />
+                            <Form.Control required className="inpt-field"  type="email" placeholder="badalma12@gmail.com" />
                         </Form.Group>
                         <Form.Group className="mb-3" controlId="formBasicPassword">
                             <Form.Label className="form-labels">Password</Form.Label>
-                            <Form.Control required type="phone" placeholder="Your Password" />
+                            <Form.Control required className="inpt-field"  type="password" placeholder="Your Password" />
                         </Form.Group>
                         <Form.Group className="mb-3" controlId="formBasicPassword">
                             <Form.Label className="form-labels">Confirm Password</Form.Label>
-                            <Form.Control required type="phone" placeholder="Enter Again" />
+                            <Form.Control required className="inpt-field"  type="password" placeholder="Enter Again" />
                         </Form.Group>
                         <Form.Group className="mb-3" controlId="formBasicPassword">
                             <Form.Label className="form-labels">Referral Code</Form.Label>
-                            <Form.Control type="phone" placeholder="" />
+                            <Form.Control type="phone" className="inpt-field"  placeholder="" />
                         </Form.Group>
                         <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                            <Form.Check required type="checkbox" label="I agree to all the Terms and Conditions" />
+                            <Form.Check className="inpt-field"  required type="checkbox" label="I agree to all the Terms and Conditions" />
                         </Form.Group>
 
                         <div className="d-grid gap-2">
