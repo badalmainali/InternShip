@@ -45,9 +45,28 @@
 }
 
 /* register */
+
+
 .reg
 {
-  border: 1px solid !important;
+  
   align-items: flex-start !important;
   padding: 3% !important;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px !important;   
 }
+
+.text-input:focus{
+  outline: none !important;
+}
+
+.reg-head
+{
+  font-weight: 600 !important;
+  color: rgb(139, 238, 134);
+}
+.form-labels
+{
+  font-weight: bold !important;
+}
+
+/* btn */

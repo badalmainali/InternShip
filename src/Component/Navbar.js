@@ -19,7 +19,7 @@ function Navbars() {
                     >
                         <Nav.Link href="#action1" className='ml-4'>Home</Nav.Link>
                         <Nav.Link href="#action2" className='ml-4'>About Us</Nav.Link>
-                        <Button href='/register' className='mx-auto ml-4' variant="outline-success" >SIGN IN</Button>
+                        <Button href='/login' className='mx-auto ml-4' variant="outline-success" >SIGN IN</Button>
                     </Nav>
                     
                         

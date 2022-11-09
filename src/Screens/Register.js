@@ -4,51 +4,67 @@ import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import { InputGroup } from "react-bootstrap";
 
 
 function Registerpage() {
     return (
         <Container>
             <Row>
-                <Col></Col>
-                <Col>
+
+                <Col className="align-self-center col-reg" md={{ span: 5, offset: 3 }}>
                     <Form className="m-3 reg">
-                        <h2 className="mt-4">REGISTER PAGE</h2>
-                        <Form.Group className="mb-3 mt-4" controlId="formBasicFullname">
-                            <Form.Label>Full Name</Form.Label>
-                            <Form.Control type="fullname" placeholder="Enter Name" />
-                            
+                        <h2 className="mt-1 reg-head">REGISTER</h2>
+                        <Form.Group className="mb-3 " controlId="formBasicFullname">
+                            <Form.Label className="form-labels">Full Name</Form.Label>
+                            <Form.Control required type="fullname" placeholder="Enter Name" />
+
                         </Form.Group>
 
                         <Form.Group className="mb-3" controlId="formBasicPassword">
-                            <Form.Label>Phone</Form.Label>
-                            <Form.Control type="phone" placeholder="+977 9815957785" />
+                            <Form.Label className="form-labels">Phone</Form.Label>
+                            <InputGroup>
+                                <InputGroup.Text>+977</InputGroup.Text>
+                                <Form.Control
+                                    required
+                                    id="inlineFormInputGroupPhone"
+
+                                />
+                            </InputGroup>
+                        </Form.Group>
+
+                        <Form.Group className="mb-3" controlId="formBasicPassword">
+                            <Form.Label className="form-labels">Email</Form.Label>
+                            <Form.Control required type="phone" placeholder="badalma12@gmail.com" />
                         </Form.Group>
                         <Form.Group className="mb-3" controlId="formBasicPassword">
-                            <Form.Label>Email</Form.Label>
-                            <Form.Control type="phone" placeholder="badalma12@gmail.com" />
+                            <Form.Label className="form-labels">Password</Form.Label>
+                            <Form.Control required type="phone" placeholder="Your Password" />
                         </Form.Group>
                         <Form.Group className="mb-3" controlId="formBasicPassword">
-                            <Form.Label>Password</Form.Label>
-                            <Form.Control type="phone" placeholder="Your Password" />
+                            <Form.Label className="form-labels">Confirm Password</Form.Label>
+                            <Form.Control required type="phone" placeholder="Enter Again" />
                         </Form.Group>
                         <Form.Group className="mb-3" controlId="formBasicPassword">
-                            <Form.Label>Confirm Password</Form.Label>
-                            <Form.Control type="phone" placeholder="Enter Again" />
-                        </Form.Group>
-                        <Form.Group className="mb-3" controlId="formBasicPassword">
-                            <Form.Label>Referral Code</Form.Label>
+                            <Form.Label className="form-labels">Referral Code</Form.Label>
                             <Form.Control type="phone" placeholder="" />
                         </Form.Group>
                         <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                            <Form.Check type="checkbox" label="I agree to all the Terms and Conditions" />
+                            <Form.Check required type="checkbox" label="I agree to all the Terms and Conditions" />
                         </Form.Group>
-                        <Button variant="primary" type="submit">
-                            Register
-                        </Button>
+
+                        <div className="d-grid gap-2">
+                            <Button variant="success" type="submit"  className="ml-5">
+                                Register
+                            </Button>
+                            <p className="mt-1">Already have an account?</p>
+                            <Button href="/login" variant="outline-success" type="submit">
+                                Login
+                            </Button>
+                        </div>
                     </Form>
                 </Col>
-                <Col></Col>
+
             </Row>
         </Container>
     )
